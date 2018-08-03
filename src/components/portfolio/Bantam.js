@@ -40,7 +40,7 @@ launched the redesigned online storefront for Bantam Bagels. </AboutDesc>
         <OverviewText>
         <PortfolioTitle>Overview</PortfolioTitle>
         <PortfolioText>
-				Psych Media developed an E-Commerce online store for Bantam Bagels to sell their products. The
+				I lead the development of an E-Commerce online store for Bantam Bagels to sell their products. The
 				store was developed on the Shopify platform with a highly customized template. We added
 				additional functionality with private apps and worked directly with a fulfillment center to allow for
 				seamless integration of their ordering process.
