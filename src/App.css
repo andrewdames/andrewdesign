@@ -209,6 +209,12 @@ background: #8B9E9D;
 }
 
 
+@media only screen and (max-width: 550px) {
+  .row {
+    display:block;
+  }
+}
+
 /*
  * The Typekit service used to deliver this font or fonts for use on websites
  * is provided by Adobe and is subject to these Terms of Use
