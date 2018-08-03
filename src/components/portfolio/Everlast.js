@@ -100,7 +100,7 @@ Working in-house for Everlast Climbing allowed me to continue carving out an ide
         </div>
 
 				<div className="col-6 col-md-4">
-				<a href="https://www.everlatclimbing.com" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.everlastclimbing.com" target="_blank" rel="noopener noreferrer">
 
 
 					<Button size="lg">
