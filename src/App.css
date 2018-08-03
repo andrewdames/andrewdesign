@@ -48,6 +48,14 @@ li {
 }
 
 button.btn-default {
+  background-color:#8b9e9d !important;
+}
+
+button.btn-default:hover {
+  background-color:#425050 !important;
+}
+
+footer button.btn-default {
   background-color:#425050 !important;
 }
 
