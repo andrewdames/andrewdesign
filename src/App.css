@@ -208,6 +208,10 @@ footer.page-footer {
 background: #8B9E9D;
 }
 
+.row {
+  align-items:center;
+}
+
 
 @media only screen and (max-width: 550px) {
   .row {

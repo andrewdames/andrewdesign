@@ -101,10 +101,10 @@ class Kumiki extends Component {
         </div>
 
 				<div className="col-6 col-md-4">
-				<a href="https://www.bantambagels.com" target="_blank" rel="noopener noreferrer">
+				<a href="https://www.kumikiclimbing.com" target="_blank" rel="noopener noreferrer">
 
 
-					<Button size="lg" gradient="blue">
+					<Button size="lg">
 					Visit the Site
 					</Button>
 			 </a>

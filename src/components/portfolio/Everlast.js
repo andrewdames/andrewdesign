@@ -103,7 +103,7 @@ Working in-house for Everlast Climbing allowed me to continue carving out an ide
 				<a href="https://www.everlatclimbing.com" target="_blank" rel="noopener noreferrer">
 
 
-					<Button size="lg" gradient="blue">
+					<Button size="lg">
 					Visit the Site
 					</Button>
 			 </a>

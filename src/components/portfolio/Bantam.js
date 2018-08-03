@@ -47,7 +47,7 @@ launched the redesigned online storefront for Bantam Bagels. </AboutDesc>
 				        </PortfolioText>
         </OverviewText>
 				<a href="https://www.bantambagels.com" target="_blank" rel="noopener noreferrer">
-					<Button size="lg" gradient="blue">
+					<Button size="lg">
 					Visit the Site
 					</Button>
 			 </a>
