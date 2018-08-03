@@ -67,7 +67,7 @@ class App extends Component {
 
           <Navbar color="unique-color-gray" light expand="lg" fixed="top" scrolling>
     <NavbarBrand href="/">
-        <img src={logo} height="30" className="d-inline-block align-top App-logo" alt="Psych Media"/>
+        <img src={logo} height="30" className="d-inline-block align-top App-logo" alt="Andrew Dames"/>
         <h1><b>ANDREW</b>DAMES</h1>
         </NavbarBrand>
 
