@@ -4,15 +4,71 @@ import everlastPages from '../../images/Webpages-Everlast.jpg';
 import { PortfolioDiv, OverviewImg, OverviewText, ProjectsDiv } from '../../theme/Grid';
 import  { PortfolioTitle, PortfolioText, Title, AboutDesc } from '../../theme/Type';
 import devIcon from '../../images/Bantam-Media-Template.png';
-import { Button } from 'mdbreact';
-
+import { Button, Col, Row } from 'mdbreact';
 import { Parallax, Background } from 'react-parallax';
+import ec1 from '../../images/EC/ec-1.jpg';
+import ec2 from '../../images/EC/ec-2.jpg';
+import ec3 from '../../images/EC/ec-3.jpg';
+import ec4 from '../../images/EC/ec-4.jpg';
+import ec5 from '../../images/EC/ec-5.jpg';
+import ec6 from '../../images/EC/ec-6.jpg';
+import ec7 from '../../images/EC/ec-7.jpg';
+import ec8 from '../../images/EC/ec-9.jpg';
+import ec9 from '../../images/EC/ec-9.jpg';
+import Gallery from 'react-photo-gallery';
+import Lightbox from 'react-images';
+
+
+//require ('/node_modules/mdbreact/docs/pages/pro/Lightbox.css');
+
 const insideStyles = {background: 'white', padding: 20, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-75%,-50%)'};
 const insideStyles2 = {background: 'white', padding: 20, position: 'absolute', top: '50%', left: '50%', transform: 'translate(50%,50%)'};
 
+
+const images = [
+	{ src: ec1},
+  { src: ec2},
+	{ src: ec4},
+	{ src: ec5},
+	{ src: ec6},
+	{ src: ec7}
+];
+
 class Everlast extends Component {
+	constructor() {
+     super();
+     this.state = { currentImage: 0 };
+     this.closeLightbox = this.closeLightbox.bind(this);
+     this.openLightbox = this.openLightbox.bind(this);
+     this.gotoNext = this.gotoNext.bind(this);
+     this.gotoPrevious = this.gotoPrevious.bind(this);
+   }
+   openLightbox(event, obj) {
+     this.setState({
+       currentImage: obj.index,
+       lightboxIsOpen: true,
+     });
+   }
+   closeLightbox() {
+     this.setState({
+       currentImage: 0,
+       lightboxIsOpen: false,
+     });
+   }
+   gotoPrevious() {
+     this.setState({
+       currentImage: this.state.currentImage - 1,
+     });
+   }
+   gotoNext() {
+     this.setState({
+       currentImage: this.state.currentImage + 1,
+     });
+   }
 
 	render() {
+
+
 		return (
       <div>
       <Title>BANTAM BAGELS</Title>
@@ -21,65 +77,63 @@ class Everlast extends Component {
       In conjuction with NYC based design agency Strong Studio our development team
 launched the redesigned online storefront for Bantam Bagels. </AboutDesc>
 
-<PortfolioDiv>
 <ProjectsDiv>
 
-<Parallax strength={-500} bgWidth="100%" bgHeight="500px">
-     <div style={{height: 500, width: 1280}}> </div>
-     <Background className="custom-bg" style={insideStyles}>
-       <img src={bantamHome} alt="fill murray" />
-     </Background>
-   </Parallax>
-   </ProjectsDiv><ProjectsDiv>
+<Parallax strength={300} bgWidth="100%" bgHeight="300px">
+		 <div style={{height: 500, width: 1280}}> </div>
+		 <Background className="custom-bg" style={insideStyles2}>
+			 <img src={everlastPages} alt="Bantam Pages" />
+		 </Background>
+	 </Parallax>
+</ProjectsDiv>
+<ProjectsDiv>
    <div className="row">
-   <div className="col">
 
-        <OverviewImg>
-        <img src={devIcon} className="servicesImg" alt="Psych Media"/>
-
-        </OverviewImg>
-        </div>
         <div className="col">
 
         <OverviewText>
         <PortfolioTitle>Overview</PortfolioTitle>
         <PortfolioText>
-        What would be the use of having a website and an ecient marketing campaign with proper analytical tools? Make sure you are tracking all of your website activity and evaluating performance in order to adapt to your viewer base and deliver exactly what they are seeking.
+Working in-house for Everlast Climbing allowed me to continue carving out an identity for the brand. I worked on a wide variety of projects including catalog and collateral design, web design, SEO work and art directing photo shoots. When I started at the company, they already had a branding style guide, however a lot of the materials were outdated. I was able to take aspects of the style they had been building and refine it into a consistent and clear identity. Some of the major projects I worked on were the 2014-2015 and the 2015-2016 catalogs, designing brochures for new product lines, and updating trade show displays. I also redesigned and developed the website with the focus of imporving it&#x27;s UX/UI.
+
         </PortfolioText>
         </OverviewText>
         </div>
-        </div>
-        </ProjectsDiv><ProjectsDiv>
 
-        <Parallax strength={300} bgWidth="100%" bgHeight="300px">
-             <div style={{height: 500, width: 1280}}> </div>
-             <Background className="custom-bg" style={insideStyles2}>
-               <img src={everlastPages} alt="Bantam Pages" />
-             </Background>
-           </Parallax>
-</ProjectsDiv>
+				<div className="col-6 col-md-4">
+				<a href="https://www.bantambagels.com" target="_blank" rel="noopener noreferrer">
+
+
+					<Button size="lg" gradient="blue">
+					Visit the Site
+					</Button>
+			 </a>
+			 </div>
+        </div>
+        </ProjectsDiv>
+<Gallery photos={images} onClick={this.openLightbox} />
+<Lightbox images={images}
+	onClose={this.closeLightbox}
+	onClickPrev={this.gotoPrevious}
+	onClickNext={this.gotoNext}
+	currentImage={this.state.currentImage}
+	isOpen={this.state.lightboxIsOpen}
+/>
+<PortfolioDiv>
+
 <ProjectsDiv>
 <div className="row">
-           <div className="col col-md-8">
-           <PortfolioTitle>SITE DEVELOPMENT</PortfolioTitle>
 
-           <PortfolioText>
-           Psych Media developed an E-Commerce online store for Bantam Bagels to sell their products. The
-           store was developed on the Shopify platform with a highly customized template. We added
-           additional functionality with private apps and worked directly with a fulfillment center to allow for
-           seamless integration of their ordering process.
-           </PortfolioText>
-           </div>
-           <div className="col-6 col-md-4">
-           <a href="https://www.bantambagels.com" target="_blank" rel="noopener noreferrer">
-             <Button size="lg" gradient="blue">
-             Visit the Site
-             </Button>
-          </a>
-          </div>
+
+
+
+
           </div>
           </ProjectsDiv>
       </PortfolioDiv>
+
+
+
 </div>
     );
 	}

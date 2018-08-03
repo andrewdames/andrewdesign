@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import bantamHome from '../../images/bantam-home.png';
-import conPages from '../../images/Webpages-Kumiki.png';
+import conPages from '../../images/Isometric-Web-Mockup-Con.jpg';
 import { PortfolioDiv, OverviewImg, OverviewText, ProjectsDiv } from '../../theme/Grid';
 import  { PortfolioTitle, PortfolioText, Title, AboutDesc } from '../../theme/Type';
 import devIcon from '../../images/Bantam-Media-Template.png';
@@ -12,77 +12,71 @@ const insideStyles2 = {background: 'white', padding: 20, position: 'absolute', t
 
 class Concentric extends Component {
 
+
+
+
 	render() {
 		return (
-      <div>
-      <Title>BANTAM BAGELS</Title>
+				<div>
 
-      <AboutDesc>
-      In conjuction with NYC based design agency Strong Studio our development team
-launched the redesigned online storefront for Bantam Bagels. </AboutDesc>
+					<Title>Concentric Ag</Title>
 
-<PortfolioDiv>
-<ProjectsDiv>
+					<AboutDesc>
+					Concentric Ag is an international company which produces quality biological soil ammendments for agricultural use.  </AboutDesc>
+					<ProjectsDiv>
 
-<Parallax strength={-500} bgWidth="100%" bgHeight="500px">
-     <div style={{height: 500, width: 1280}}> </div>
-     <Background className="custom-bg" style={insideStyles}>
-       <img src={bantamHome} alt="fill murray" />
-     </Background>
-   </Parallax>
-   </ProjectsDiv><ProjectsDiv>
-   <div className="row">
-   <div className="col">
+			<Parallax strength={300} bgWidth="100%" bgHeight="300px">
+			 <div style={{height: 500, width: 1280}}> </div>
+			 <Background className="custom-bg" style={insideStyles2}>
+				 <img src={conPages} alt="Bantam Pages" />
+			 </Background>
+			</Parallax>
+			</ProjectsDiv>
+			<ProjectsDiv>
+			<div className="row">
 
-        <OverviewImg>
-        <img src={devIcon} className="servicesImg" alt="Psych Media"/>
+					<div className="col">
 
-        </OverviewImg>
-        </div>
-        <div className="col">
+					<OverviewText>
+					<PortfolioTitle>Overview</PortfolioTitle>
+					<PortfolioText>
+						For this project I worked with a design team and played the role of lead developer of the website. We used Wordpress as a content management system and build a custom template on top of their framework for the front end of the site.
+					</PortfolioText>
+					</OverviewText>
+					</div>
 
-        <OverviewText>
-        <PortfolioTitle>Overview</PortfolioTitle>
-        <PortfolioText>
-        What would be the use of having a website and an ecient marketing campaign with proper analytical tools? Make sure you are tracking all of your website activity and evaluating performance in order to adapt to your viewer base and deliver exactly what they are seeking.
-        </PortfolioText>
-        </OverviewText>
-        </div>
-        </div>
-        </ProjectsDiv><ProjectsDiv>
+					<div className="col-6 col-md-4">
+					<a href="https://www.concentricag.com" target="_blank" rel="noopener noreferrer">
 
-        <Parallax strength={300} bgWidth="100%" bgHeight="300px">
-             <div style={{height: 500, width: 1280}}> </div>
-             <Background className="custom-bg" style={insideStyles2}>
-               <img src={conPages} alt="Bantam Pages" />
-             </Background>
-           </Parallax>
-</ProjectsDiv>
-<ProjectsDiv>
-<div className="row">
-           <div className="col col-md-8">
-           <PortfolioTitle>SITE DEVELOPMENT</PortfolioTitle>
 
-           <PortfolioText>
-           Psych Media developed an E-Commerce online store for Bantam Bagels to sell their products. The
-           store was developed on the Shopify platform with a highly customized template. We added
-           additional functionality with private apps and worked directly with a fulfillment center to allow for
-           seamless integration of their ordering process.
-           </PortfolioText>
-           </div>
-           <div className="col-6 col-md-4">
-           <a href="https://www.bantambagels.com" target="_blank" rel="noopener noreferrer">
-             <Button size="lg" gradient="blue">
-             Visit the Site
-             </Button>
-          </a>
-          </div>
-          </div>
-          </ProjectsDiv>
-      </PortfolioDiv>
-</div>
-    );
-	}
-}
+						<Button size="lg" gradient="blue">
+						Visit the Site
+						</Button>
+				 </a>
+				 </div>
+					</div>
+					</ProjectsDiv>
+
+			<PortfolioDiv>
+
+			<ProjectsDiv>
+			<div className="row">
+
+
+
+
+
+						</div>
+						</ProjectsDiv>
+				</PortfolioDiv>
+
+
+
+			</div>
+			);
+			}
+			}
+
+
 
 export default Concentric;

@@ -47,7 +47,7 @@ export const ProcessDiv = styled.div`
 export const PageContent = styled.div`
     margin: 0 auto;
     width:100%;
-    padding-top:130px;
+    padding-top:250px;
     max-width:1280px;
 `;
 
@@ -74,6 +74,7 @@ width:100%;
 max-width:1280px;
 display:flex;
 flex-wrap:wrap;
+padding-bottom:50px;
 `;
 
 export const ProjectsDiv = styled.div`

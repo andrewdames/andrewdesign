@@ -15,7 +15,7 @@ text-transform: uppercase;
   content:"";
   padding-top:  10px;
   display:block;
-  border-bottom: 1px solid #2872b9;
+  border-bottom: 1px solid #8B9E9D;
   width:75px;
   margin: 0 auto;
 }
@@ -28,7 +28,7 @@ font-family: "Museo Slab";
   content:"";
   padding-top:  10px;
   display:block;
-  border-bottom: 1px solid #ae193e;
+  border-bottom: 1px solid #4F6160;
   width:75px;
   margin: 0 auto;
 }

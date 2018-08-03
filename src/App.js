@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './Psych-Media_Logo.jpg';
+import logo from './images/ad-logo.png';
 import Home from './components/Home';
 import About from './components/about';
 import Portfolio from './components/Portfolio';
@@ -10,7 +10,8 @@ import Everlast from './components/portfolio/Everlast';
 import Kumiki from './components/portfolio/Kumiki';
 import Leadership from './components/portfolio/Leadership';
 import Litfest from './components/portfolio/Litfest';
-import Rutherford from './components/portfolio/Rutherford';
+import BTR from './components/portfolio/BTR';
+import Lakewine from './components/portfolio/Lakewine';
 import Hanys from './components/portfolio/Hanys';
 import Services from './components/Services';
 import Development from './components/services/Development';
@@ -67,30 +68,10 @@ class App extends Component {
           <Navbar color="unique-color-gray" light expand="lg" fixed="top" scrolling>
     <NavbarBrand href="/">
         <img src={logo} height="30" className="d-inline-block align-top App-logo" alt="Psych Media"/>
+        <h1><b>ANDREW</b>DAMES</h1>
         </NavbarBrand>
 
-        { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
-        <Collapse isOpen = { this.state.collapse } navbar>
-        <NavbarNav right>
-        <UpdateBlocker>
 
-        <NavItem active>
-                             <NavLink to="/">Home</NavLink>
-                         </NavItem>
-                         <NavItem>
-                             <NavLink to="/about">About</NavLink>
-                         </NavItem>
-                         <NavItem>
-                             <NavLink to="/portfolio">Portfolio</NavLink>
-                         </NavItem>
-                         <NavItem>
-                             <NavLink to="/services">Services</NavLink>
-                         </NavItem>
-                         </UpdateBlocker>
-                         </NavbarNav>
-
-
-    </Collapse>
 
 </Navbar>
 
@@ -100,13 +81,12 @@ class App extends Component {
                   <Route path="/about" component={About}/>
                   <Route exact={true} path="/portfolio" component={Portfolio}/>
                   <Route path="/portfolio/bantam" component={Bantam}/>
-                  <Route path="/portfolio/megpies" component={Megpies}/>
                   <Route path="/portfolio/concentric" component={Concentric}/>
                   <Route path="/portfolio/everlast" component={Everlast}/>
                   <Route path="/portfolio/kumiki" component={Kumiki}/>
-                  <Route path="/portfolio/leadership" component={Leadership}/>
+                  <Route path="/portfolio/lakewine" component={Lakewine}/>
                   <Route path="/portfolio/litfest" component={Litfest}/>
-                  <Route path="/portfolio/rutherford" component={Rutherford}/>
+                  <Route path="/portfolio/backtoroots" component={BTR}/>
                   <Route path="/portfolio/hanys" component={Hanys}/>
                   <Route exact={true} path="/services" component={Services}/>
                   <Route path="/services/development" component={Development}/>

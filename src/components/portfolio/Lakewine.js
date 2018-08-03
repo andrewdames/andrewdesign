@@ -1,22 +1,13 @@
 import React, { Component } from 'react';
 import bantamHome from '../../images/bantam-home.png';
-import everlastPages from '../../images/Webpages-Everlast.jpg';
+import lwsCover from '../../images/lwsmenu/cover.jpg';
 import { PortfolioDiv, OverviewImg, OverviewText, ProjectsDiv } from '../../theme/Grid';
 import  { PortfolioTitle, PortfolioText, Title, AboutDesc } from '../../theme/Type';
 import devIcon from '../../images/Bantam-Media-Template.png';
 import { Button, Col, Row } from 'mdbreact';
 import { Parallax, Background } from 'react-parallax';
-import ec1 from '../../images/EC/ec-1.jpg';
-import ec2 from '../../images/EC/ec-2.jpg';
-import ec3 from '../../images/EC/ec-3.jpg';
-import ec4 from '../../images/EC/ec-4.jpg';
-import ec5 from '../../images/EC/ec-5.jpg';
-import ec6 from '../../images/EC/ec-6.jpg';
-import ec7 from '../../images/EC/ec-7.jpg';
-import ec8 from '../../images/EC/ec-9.jpg';
-import ec9 from '../../images/EC/ec-9.jpg';
-import kumikiPages from '../../images/Webpages-Kumiki.png';
-
+import ec1 from '../../images/lwsmenu/inside.jpg';
+import ec2 from '../../images/lwsmenu/insideCover.jpg';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 
@@ -30,13 +21,10 @@ const insideStyles2 = {background: 'white', padding: 20, position: 'absolute', t
 const images = [
 	{ src: ec1},
   { src: ec2},
-	{ src: ec4},
-	{ src: ec5},
-	{ src: ec6},
-	{ src: ec7}
+
 ];
 
-class Kumiki extends Component {
+class Lakewine extends Component {
 	constructor() {
      super();
      this.state = { currentImage: 0 };
@@ -73,17 +61,18 @@ class Kumiki extends Component {
 
 		return (
       <div>
-      <Title>Kumiki Climbing</Title>
+      <Title>Lake Wine & Spirits</Title>
 
       <AboutDesc>
-      Kumiki Climbing is a high end climbing wall hold company based in Minneapolis.  </AboutDesc>
+Lake Wine & Spirits is a boutique wine and cheese shop located in Minneapolis.
+       </AboutDesc>
 
 <ProjectsDiv>
 
 <Parallax strength={300} bgWidth="100%" bgHeight="300px">
 		 <div style={{height: 500, width: 1280}}> </div>
 		 <Background className="custom-bg" style={insideStyles2}>
-			 <img src={kumikiPages} alt="Bantam Pages" />
+			 <img src={lwsCover} alt="Bantam Pages" />
 		 </Background>
 	 </Parallax>
 </ProjectsDiv>
@@ -95,23 +84,22 @@ class Kumiki extends Component {
         <OverviewText>
         <PortfolioTitle>Overview</PortfolioTitle>
         <PortfolioText>
-					For this project I helped them create the entire brand identity, from the logo, to the color scheme, to the brand guidelines and the website. I also did the development of this website using a cuztomized template on the Shopify platform.
+        This project was a redesign of the Lake Wine & Spirits cheese shop menu. We chose a high quality paper (Speckletone Kraft stock from French Paper Co.) to reflect the butcher paper used to wrap sandwiches. The hand drawn looking font used for the titles reflects hand drawn chalkboard menu at the store.
         </PortfolioText>
         </OverviewText>
         </div>
 
-				<div className="col-6 col-md-4">
-				<a href="https://www.bantambagels.com" target="_blank" rel="noopener noreferrer">
 
-
-					<Button size="lg" gradient="blue">
-					Visit the Site
-					</Button>
-			 </a>
-			 </div>
         </div>
         </ProjectsDiv>
-
+<Gallery photos={images} onClick={this.openLightbox} />
+<Lightbox images={images}
+	onClose={this.closeLightbox}
+	onClickPrev={this.gotoPrevious}
+	onClickNext={this.gotoNext}
+	currentImage={this.state.currentImage}
+	isOpen={this.state.lightboxIsOpen}
+/>
 <PortfolioDiv>
 
 <ProjectsDiv>
@@ -132,4 +120,4 @@ class Kumiki extends Component {
 	}
 }
 
-export default Kumiki;
+export default Lakewine;

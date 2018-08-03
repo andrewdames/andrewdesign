@@ -6,17 +6,11 @@ import  { PortfolioTitle, PortfolioText, Title, AboutDesc } from '../../theme/Ty
 import devIcon from '../../images/Bantam-Media-Template.png';
 import { Button, Col, Row } from 'mdbreact';
 import { Parallax, Background } from 'react-parallax';
-import ec1 from '../../images/EC/ec-1.jpg';
-import ec2 from '../../images/EC/ec-2.jpg';
-import ec3 from '../../images/EC/ec-3.jpg';
-import ec4 from '../../images/EC/ec-4.jpg';
-import ec5 from '../../images/EC/ec-5.jpg';
-import ec6 from '../../images/EC/ec-6.jpg';
-import ec7 from '../../images/EC/ec-7.jpg';
-import ec8 from '../../images/EC/ec-9.jpg';
-import ec9 from '../../images/EC/ec-9.jpg';
-import kumikiPages from '../../images/Webpages-Kumiki.png';
-
+import ec1 from '../../images/BTR/labelsOnProduct.jpg';
+import ec2 from '../../images/BTR/LAbels.jpg';
+import ec3 from '../../images/BTR/csa-dayAd2.jpg';
+import ec4 from '../../images/BTR/IMG_3506.png';
+import ec5 from '../../images/BTR/IMG_3531.png';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 
@@ -28,15 +22,13 @@ const insideStyles2 = {background: 'white', padding: 20, position: 'absolute', t
 
 
 const images = [
-	{ src: ec1},
-  { src: ec2},
-	{ src: ec4},
-	{ src: ec5},
-	{ src: ec6},
-	{ src: ec7}
+	{ src: ec2},
+  { src: ec3},
+  { src: ec4},
+  { src: ec5}
 ];
 
-class Kumiki extends Component {
+class Everlast extends Component {
 	constructor() {
      super();
      this.state = { currentImage: 0 };
@@ -73,17 +65,18 @@ class Kumiki extends Component {
 
 		return (
       <div>
-      <Title>Kumiki Climbing</Title>
+      <Title>BACK TO ROOTS</Title>
 
       <AboutDesc>
-      Kumiki Climbing is a high end climbing wall hold company based in Minneapolis.  </AboutDesc>
+Back to Roots Urban Farm was a farm which I was a co-founder of in Downtown Minneapolis. We grew food for the community, helped out with schoolyard gardens and had garden workshops for 5 years.
+      </AboutDesc>
 
 <ProjectsDiv>
 
 <Parallax strength={300} bgWidth="100%" bgHeight="300px">
 		 <div style={{height: 500, width: 1280}}> </div>
 		 <Background className="custom-bg" style={insideStyles2}>
-			 <img src={kumikiPages} alt="Bantam Pages" />
+			 <img src={ec1} alt="Bantam Pages" />
 		 </Background>
 	 </Parallax>
 </ProjectsDiv>
@@ -95,23 +88,21 @@ class Kumiki extends Component {
         <OverviewText>
         <PortfolioTitle>Overview</PortfolioTitle>
         <PortfolioText>
-					For this project I helped them create the entire brand identity, from the logo, to the color scheme, to the brand guidelines and the website. I also did the development of this website using a cuztomized template on the Shopify platform.
+I designed, created and managed the website for Back to Roots as well as designing and producing the logo and labels for the prepared good we made. I also managed the created marketing campaigns to sell the CSA shares.
         </PortfolioText>
         </OverviewText>
         </div>
 
-				<div className="col-6 col-md-4">
-				<a href="https://www.bantambagels.com" target="_blank" rel="noopener noreferrer">
-
-
-					<Button size="lg" gradient="blue">
-					Visit the Site
-					</Button>
-			 </a>
-			 </div>
         </div>
         </ProjectsDiv>
-
+<Gallery photos={images} onClick={this.openLightbox} />
+<Lightbox images={images}
+	onClose={this.closeLightbox}
+	onClickPrev={this.gotoPrevious}
+	onClickNext={this.gotoNext}
+	currentImage={this.state.currentImage}
+	isOpen={this.state.lightboxIsOpen}
+/>
 <PortfolioDiv>
 
 <ProjectsDiv>
@@ -132,4 +123,4 @@ class Kumiki extends Component {
 	}
 }
 
-export default Kumiki;
+export default Everlast;
