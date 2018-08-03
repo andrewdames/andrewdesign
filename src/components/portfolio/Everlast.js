@@ -71,11 +71,10 @@ class Everlast extends Component {
 
 		return (
       <div>
-      <Title>BANTAM BAGELS</Title>
+      <Title>Everlast Climbing</Title>
 
       <AboutDesc>
-      In conjuction with NYC based design agency Strong Studio our development team
-launched the redesigned online storefront for Bantam Bagels. </AboutDesc>
+      Everlast Climing makes climbing walls, along with our hand holds, mats, safety features, curriculum and accessories targeted towards educational institutions.</AboutDesc>
 
 <ProjectsDiv>
 
