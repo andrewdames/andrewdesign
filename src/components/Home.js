@@ -8,7 +8,7 @@ import VideoPlayer from 'react-simple-video-player';
 import psychBanner from '../images/psych-banner.gif';
 import psychVideo from '../images/psych-banner.mp4';
 import KumikiSq from '../images/KumikiSq.jpg';
-import ConcentricSq from '../images/ConcentricSq.jpg';
+import AbstractedSq from '../images/AbstractedSq.jpg';
 import EverlastSq from '../images/EverlastSq.jpg';
 import BantamSq from '../images/BantamSq.jpg';
 import LakeSq from '../images/LakeSq.jpg';
@@ -80,10 +80,10 @@ class Home extends Component {
 
 					<PortfolioItem>
 					<div className="container">
-					 <Link to="/portfolio/concentric" className="portfolioLink">
-					  <img src={ConcentricSq} alt='Concentric' className="portfolioImg" />
+					 <Link to="/portfolio/abstracted" className="portfolioLink">
+					  <img src={AbstractedSq} alt='Abstracted' className="portfolioImg" />
 					  <div className="overlay">
-					    <div className="text">Concentric</div>
+					    <div className="text">The Abstrated Gallery</div>
 					  </div>
 					 </Link>
 					 </div>

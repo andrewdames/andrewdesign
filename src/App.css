@@ -39,7 +39,22 @@ a.navbar-brand {
 li {
   text-align:left;
   list-style:none;
+  font-size: 1.15rem;
+  line-height: 3rem;
 }
+
+.text-center a {
+  margin:0 auto;
+}
+
+button.btn-default {
+  background-color:#425050 !important;
+}
+
+footer button.btn-default {
+margin-bottom: 30px;
+}
+
 /*
 .App-header {
   background-color: #F2F2F4;

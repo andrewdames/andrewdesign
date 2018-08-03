@@ -12,7 +12,7 @@ import Leadership from './components/portfolio/Leadership';
 import Litfest from './components/portfolio/Litfest';
 import BTR from './components/portfolio/BTR';
 import Lakewine from './components/portfolio/Lakewine';
-import Hanys from './components/portfolio/Hanys';
+import Abstracted from './components/portfolio/Abstracted';
 import Services from './components/Services';
 import Development from './components/services/Development';
 import Maintenance from './components/services/Maintenance';
@@ -87,7 +87,7 @@ class App extends Component {
                   <Route path="/portfolio/lakewine" component={Lakewine}/>
                   <Route path="/portfolio/litfest" component={Litfest}/>
                   <Route path="/portfolio/backtoroots" component={BTR}/>
-                  <Route path="/portfolio/hanys" component={Hanys}/>
+                  <Route path="/portfolio/abstracted" component={Abstracted}/>
                   <Route exact={true} path="/services" component={Services}/>
                   <Route path="/services/development" component={Development}/>
                   <Route path="/services/maintenance" component={Maintenance}/>
