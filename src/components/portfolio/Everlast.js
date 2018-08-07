@@ -17,6 +17,10 @@ import ec8 from '../../images/EC/ec-9.jpg';
 import ec9 from '../../images/EC/ec-9.jpg';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
+import catalog from '../../images/EverlastClimbing_2016_Online.pdf';
+import ec10 from '../../images/EC/tradeshow.jpg';
+import ec11 from '../../images/EC/tradeshow2.jpg';
+
 
 
 //require ('/node_modules/mdbreact/docs/pages/pro/Lightbox.css');
@@ -31,7 +35,9 @@ const images = [
 	{ src: ec4},
 	{ src: ec5},
 	{ src: ec6},
-	{ src: ec7}
+	{ src: ec7},
+	{ src: ec10},
+	{ src: ec11}
 ];
 
 class Everlast extends Component {
@@ -106,6 +112,13 @@ Working in-house for Everlast Climbing allowed me to continue carving out an ide
 					<Button size="lg">
 					Visit the Site
 					</Button>
+</a>
+					<a href={catalog} target="_blank" rel="noopener noreferrer">
+
+
+						<Button size="lg">
+						View the Catalog
+						</Button>
 			 </a>
 			 </div>
         </div>
