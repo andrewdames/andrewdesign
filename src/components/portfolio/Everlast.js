@@ -17,7 +17,7 @@ import ec8 from '../../images/EC/ec-9.jpg';
 import ec9 from '../../images/EC/ec-9.jpg';
 import Gallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
-import catalog from '../../images/EverlastClimbing_2016_Online.pdf';
+import catalog from '../../images/EverlastClimbing_2015Catalog_Digital.pdf';
 import ec10 from '../../images/EC/tradeshow.jpg';
 import ec11 from '../../images/EC/tradeshow2.jpg';
 
